@@ -25,7 +25,7 @@ precmd() {
   fi
 
   # Path in blue, branch in red, tree at end, white input
-  PROMPT="🛶 %B%F{blue}%~%f%b${gitseg} 🫠 %F{white}"
+  PROMPT="😎 %B%F{blue}%~%f%b${gitseg} 🛶 %F{white}"
 }
 
 # Secondary prompt (multiline continuation) also white
