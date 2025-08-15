@@ -36,7 +36,7 @@ ff() {
     selected_relative_path=$(fd --type d . "$search_path" --hidden --exclude .git --exclude node_modules \
         | sed "s|^$search_path/||" \
         | fzf \
-            --preview "eza --tree --color=always --icons=always --level=2 \"$FZF_FF_SEARCH_PATH\"/{}" \
+            --preview "eza --tree --color=always --icons=always --level=1 \"$FZF_FF_SEARCH_PATH\"/{}" \
             --preview-window 'right:50%' \
             --height '80%' \
             --border 'rounded' \
@@ -50,7 +50,7 @@ ff() {
         cd "$full_path" || return
         # Optional: clear the screen and show a tree of the new location.
         clear
-        eza --tree --icons=always --level=2 # Corrected eza flag
+        eza --tree --icons=always --level=1 # Corrected eza flag
     fi
 }
 
@@ -77,7 +77,7 @@ ffn() {
     selected_relative_path=$(fd --type d . "$search_path" --hidden --exclude .git --exclude node_modules \
         | sed "s|^$search_path/||" \
         | fzf \
-            --preview "eza --tree --color=always --icons=always --level=2 \"$FZF_FF_SEARCH_PATH\"/{}" \
+            --preview "eza --tree --color=always --icons=always --level=1 \"$FZF_FF_SEARCH_PATH\"/{}" \
             --preview-window 'right:50%' \
             --height '80%' \
             --border 'rounded' \

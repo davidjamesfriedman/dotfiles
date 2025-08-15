@@ -3,7 +3,7 @@
 # Simple, reliable loading of all shell functions
 
 # Base directory for shell modules
-SHELL_MODULES_DIR="${HOME}/GitHub/matthewmyrick/dotfiles/scripts/shell"
+SHELL_MODULES_DIR="${HOME}/GitHub/davidjamesfriedman/dotfiles/scripts/shell"
 
 # Function to load all shell modules
 load_shell_modules() {

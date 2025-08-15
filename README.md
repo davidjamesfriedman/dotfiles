@@ -18,8 +18,9 @@ Run the installation script to set up all dotfiles and dependencies:
 ```
 
 This will:
+
 1. Copy dotfiles to home directory (`.zshrc`, `.aliases`, etc.)
-2. Install the modular shell system to `~/GitHub/matthewmyrick/dotfiles/scripts/shell/`
+2. Install the modular shell system to `~/GitHub/davidjamesfriedman/dotfiles/scripts/shell/`
 3. Set up config directories for nvim, yazi, kitty
 4. Install required Homebrew packages
 5. Configure Python virtual environment for Neovim
@@ -71,6 +72,7 @@ brewf            # Interactive Homebrew UI
 ### Performance
 
 With lazy loading enabled:
+
 - **Before**: ~300-500ms startup time
 - **After**: ~50-100ms startup time
 - Functions load instantly on first use (<10ms per module)
@@ -78,13 +80,14 @@ With lazy loading enabled:
 ## Notes
 
 - `.gitconfig` must be updated manually to prevent overwriting any current git configuration
-- Shell functions are located in `~/GitHub/matthewmyrick/dotfiles/scripts/shell/`
+- Shell functions are located in `~/GitHub/davidjamesfriedman/dotfiles/scripts/shell/`
 - Python telemetry is opt-in via `python_telemetry` alias
 - Curl JSON detection available via `curlj` alias
 
 ## Troubleshooting
 
 If functions aren't available after installation:
+
 1. Restart your shell or run `source ~/.zshrc`
 2. Check loaded modules with `shell_loaded`
 3. Force load modules with `shell_load all`

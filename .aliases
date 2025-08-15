@@ -6,8 +6,11 @@ alias back='cd -'
 alias root='cd /'
 alias repos='cd ~/source/repos'
 
-# ls
-alias ls='eza --icons --git --color=always --group-directories-first --tree --level=2 --no-permissions --no-user --no-time --all'
+# ls# vertical eza with colors (blue dirs, white files)
+export LS_COLORS="di=34:fi=37"
+alias ls='eza -1 --git --color=always --group-directories-first'
+
+#alias ls='ls'
 
 # read files
 alias cat='bat --paging=never'

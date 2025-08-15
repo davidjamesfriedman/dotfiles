@@ -164,7 +164,7 @@ ffgn() {
     selected_relative_path=$(fd --type d --max-depth 2 . "$search_path" --hidden --exclude .git --exclude node_modules \
         | sed "s|^$search_path/||" \
         | fzf \
-            --preview "eza --tree --color=always --icons=always --level=2 \"$FZF_FFGN_SEARCH_PATH\"/{}" \
+            --preview "eza --tree --color=always --icons=always --level=1 \"$FZF_FFGN_SEARCH_PATH\"/{}" \
             --preview-window 'right:50%' \
             --height '80%' \
             --border 'rounded' \
